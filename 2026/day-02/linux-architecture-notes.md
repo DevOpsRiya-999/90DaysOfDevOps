@@ -108,11 +108,11 @@ init/systemd	= The first process that starts after the kernel boots. It starts a
  Makes Linux Ready for Users
 
  # Linux Process States
- Running (R): The process is currently using the CPU or is ready to run.
-Sleeping (S): The process is waiting for an event, such as user input or a file to become available.
-Stopped (T): The process has been paused and can be resumed later.
-Zombie (Z): The process has finished, but its entry still exists until its parent process removes it.
-Uninterruptible Sleep (D): The process is waiting for hardware operations (like disk I/O) and cannot be interrupted.
+> Running (R): The process is currently using the CPU or is ready to run.
+> Sleeping (S): The process is waiting for an event, such as user input or a file to become available.
+> Stopped (T): The process has been paused and can be resumed later.
+> Zombie (Z): The process has finished, but its entry still exists until its parent process removes it.
+> Uninterruptible Sleep (D): The process is waiting for hardware operations (like disk I/O) and cannot be interrupted.
 # Linux Commands I Would Use Daily
 pwd – Shows the current working directory.
 ls – Lists files and folders in a directory.
