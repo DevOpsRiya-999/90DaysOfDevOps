@@ -114,20 +114,20 @@ init/systemd	= The first process that starts after the kernel boots. It starts a
 *Zombie (Z): The process has finished, but its entry still exists until its parent process removes it.
 * Uninterruptible Sleep (D): The process is waiting for hardware operations (like disk I/O) and cannot be interrupted.
 # Linux Commands I Would Use Daily
-*pwd – Shows the current working directory.
-*ls – Lists files and folders in a directory.
-*cd – Changes from one directory to another.
-*ps – Displays the running processes on the system.
-*top – Shows live system performance, including CPU, memory, and running processes.
-*sudo - super root user do 
-*sudo apt-get update- use for downloaded packages
-*sudo apt-get upgrade - use for install all packages
-*grep-
-*sudo apt update -
-*systemctl reboot-
-*uname-
-*ping-
-*rm -rf -
+* pwd – Shows the current working directory.
+* ls – Lists files and folders in a directory.
+* cd – Changes from one directory to another.
+* ps – Displays the running processes on the system.
+* top – Shows live system performance, including CPU, memory, and running processes.
+* sudo - super root user do 
+*s udo apt-get update- use for downloaded packages
+* sudo apt-get upgrade - use for install all packages
+* grep-
+* sudo apt update -
+* systemctl reboot-
+* uname-
+* ping-
+* rm -rf -
 
 
 
