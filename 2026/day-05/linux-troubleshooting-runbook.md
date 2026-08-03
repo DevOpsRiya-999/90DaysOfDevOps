@@ -235,3 +235,15 @@ Why?
 strace shows what system calls a process is making, which can help identify if it's stuck waiting on files, network, or other resources.
 
 ----------------------------------------
+How to Think Like a DevOps Engineer
+
+Whenever a service has an issue, follow this mental checklist in order:
+
+🖥️ Is the server healthy? → top, free -h
+💾 Is the disk full? → df -h, du -sh
+🌐 Is the service listening? → ss -tulpn
+📡 Is the application responding? → curl -I
+📋 What do the logs say? → journalctl, tail
+🛠️ Only after collecting evidence, decide the fix.
+
+This structured approach is exactly what interviewers and production teams expect from a DevOps engineer, because it avoids guessing and leads to faster, more reliable incident resolution.
