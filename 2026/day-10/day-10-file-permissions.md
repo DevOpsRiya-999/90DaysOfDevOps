@@ -50,6 +50,8 @@ chmod 640 notes.txt
 mkdir project
 chmod 755 project
 ./script.sh
+
+
 <img width="462" height="735" alt="image" src="https://github.com/user-attachments/assets/72a6a114-de95-4f0f-8a51-df6951f27979" />
 
 ## What I Learned
