@@ -22,3 +22,36 @@ task4: Local Variables
 
 task5: 
 <img width="1018" height="587" alt="image" src="https://github.com/user-attachments/assets/a05c7430-37d9-42f4-b7c3-a624ca7e4340" />
+
+Important: Understand the Disk Function
+
+This line:
+
+du -ah / 2>/dev/null | sort -rh | head -n 5
+
+is worth understanding for interviews.
+
+du -ah /
+
+Find disk usage under /.
+
+2>/dev/null
+
+Hide permission/error messages.
+
+sort -rh
+
+Sort from largest to smallest.
+
+-r → reverse
+-h → human-readable sorting
+
+head -n 5
+
+Show only the top five.
+
+
+## Three Key Things I Learned
+Functions make Bash scripts reusable, cleaner and easier to maintain.
+set -euo pipefail helps make production scripts safer and easier to troubleshoot.
+Using local variables prevents functions from accidentally modifying global variables.
