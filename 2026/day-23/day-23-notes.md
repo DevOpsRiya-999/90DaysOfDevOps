@@ -33,3 +33,15 @@ git switch (for branches) and git restore (for files).
 
 6.Make a commit on feature-1 that does not exist on main
 <img width="1090" height="857" alt="image" src="https://github.com/user-attachments/assets/fe0475d3-fb53-4f4e-a28b-54754b679a12" />
+7. Switch back to main — verify that the commit from feature-1 is not there
+<img width="1116" height="415" alt="image" src="https://github.com/user-attachments/assets/dba33ca3-a21d-4279-86e7-c0dbaece4551" />
+8.Delete a branch you no longer need
+#  Delete the branch safely
+```bash
+git branch -d branch-name
+git branch -D branch-name # Force Delete (-D): If you are absolutely certain you want to destroy the branch and throw away all unmerged work inside it
+git push origin --delete branch-name  #If you pushed the branch to a platform like GitHub and want to remove it from the cloud as well, run this command:
+```
+
+
+
