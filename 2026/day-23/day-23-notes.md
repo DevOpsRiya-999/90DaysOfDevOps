@@ -42,6 +42,96 @@ git branch -d branch-name
 git branch -D branch-name # Force Delete (-D): If you are absolutely certain you want to destroy the branch and throw away all unmerged work inside it
 git push origin --delete branch-name  #If you pushed the branch to a platform like GitHub and want to remove it from the cloud as well, run this command:
 ```
+## Task 3 – GitHub
+
+### What is origin?
+
+Origin is the conventional name given to the remote repository.
+
+### What is upstream?
+
+Upstream usually refers to the original repository from which a fork was created.
+--------------------------
+## Task 4 – Fetch vs Pull
+
+### git fetch
+
+git fetch downloads changes and remote-tracking information without automatically merging those changes into the current branch.
+
+### git pull
+
+git pull downloads changes and integrates them into the current branch.
+
+In simple terms:
+
+git pull = git fetch + integration
+
+
+## Clone vs Fork
+| Clone                                               | Fork                                       |
+| --------------------------------------------------- | ------------------------------------------ |
+| Git operation                                       | GitHub feature                             |
+| Copies repo to your local machine                   | Creates your own GitHub copy               |
+| Used for local development                          | Commonly used for contributing to projects |
+| Doesn't create a new GitHub repo                    | Creates a new GitHub repository            |
+| Works with private/public repos depending on access | Commonly used with public repos            |
+
+## Fork
+Original Project
+      │
+      │ Fork
+      ▼
+Your Fork
+      │
+      │ Clone
+      ▼
+Local Machine
+      │
+      │ changes
+      ▼
+Your Fork
+      │
+      │ Pull Request
+      ▼
+Original Project
+----------------------------------
+### When to clone?
+
+Clone when you want to work with a repository locally and have the required access.
+
+### When to fork?
+
+Fork when you need your own GitHub copy, especially when contributing to a repository where you don't have direct write access.
+
+### Keeping a fork synchronized
+
+Add the original repository as upstream:
+
+git remote add upstream <original-repository-url>
+
+Then:
+
+git fetch upstream
+
+git switch main
+
+git merge upstream/main
+
+git push origin main
+
+                 GitHub
+                   │
+          ┌────────┴────────┐
+          │                 │
+        main             feature-1
+          │                 │
+          └──────┬──────────┘
+                 │
+            Your Local Repo
+                 │
+          ┌──────┴──────┐
+          │             │
+        main        feature-1
 
 
 
