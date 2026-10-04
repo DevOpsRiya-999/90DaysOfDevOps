@@ -12,7 +12,7 @@ By taking advantage of Docker's methodologies for shipping, testing, and deployi
 3 Containers vs Virtual Machines — what's the real difference?
 * Containers and virtual machines are very similar resource virtualization technologies. Virtualization is the process in which a system singular resource like RAM, CPU, Disk, or Networking can be ‘virtualized’ and represented as multiple resources. The key differentiator between containers and virtual machines is that virtual machines virtualize an entire machine down to the hardware layers and containers only virtualize software layers above the operating system level.
 * <img width="3840" height="1332" alt="image" src="https://github.com/user-attachments/assets/a38b70b0-d110-4b72-9118-361b79c1594b" />
-<img width="3840" height="1332" alt="image" src="https://github.com/user-attachments/assets/e8660f87-c4f7-4068-8725-1c237eb64cad" />
+
 
 -------------------------------------
 5 What is the Docker architecture? (daemon, client, images, containers, registry)
